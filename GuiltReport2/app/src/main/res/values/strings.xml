@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Guilt Report</string>
+    <string name="guilt_header">Enter a header</string>
+    <string name="guilt_explain">Expalin the guilt</string>
+    <string name="menuitem_show_my_reports">Show My Reports</string>
+    <string name="menuitem_show_all_reports">Show All Reports</string>
+    <string name="menuitem_delete_report">Delete Report</string>
+    <string name="menuitem_edit_report">Edit Report</string>
+</resources>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageView
+        android:id="@+id/imageview1"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editText1"
+        android:layout_below="@+id/imageview1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/editText2"
+        android:hint="@string/guilt_header"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/editText2"
+        android:hint="@string/guilt_explain"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="italic"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/editText1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/add_photo_button"
+        android:background="@android:drawable/ic_menu_camera"
+        android:onClick="addPhoto"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/editText1"
+        android:layout_toLeftOf="@id/add_photo_button"
+        android:layout_toStartOf="@id/add_photo_button"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:drawable/ic_menu_mapmode"
+        android:id="@+id/add_location_button" />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/save_button"
+        android:background="@android:drawable/ic_menu_save"
+        android:layout_above="@+id/editText1"
+        android:layout_toStartOf="@+id/add_location_button"
+        android:layout_marginEnd="8dp"
+        android:onClick="saveReport"/>
+
+</RelativeLayout>
